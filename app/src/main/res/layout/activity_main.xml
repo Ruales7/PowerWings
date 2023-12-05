@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/historia"
+                    android:layout_width="411dp"
+                    android:layout_height="3014.53dp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/background" />
+
+                <ImageButton
+                    android:id="@+id/bthistoria"
+                    android:layout_width="298.98dp"
+                    android:layout_height="290.4dp"
+                    android:layout_marginTop="984dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:onClick="historia"
+                    android:tint="#00FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/historia"
+                    app:srcCompat="@drawable/bthistoria"
+                    tools:ignore="UseAppTint" />
+
+                <ImageButton
+                    android:id="@+id/btminigame"
+                    android:layout_width="298.98dp"
+                    android:layout_height="290.4dp"
+                    android:layout_marginTop="144dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:onClick="minigame"
+                    android:tint="#00FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/bthistoria"
+                    app:srcCompat="@drawable/btminigame"
+                    tools:ignore="UseAppTint" />
+
+                <ImageButton
+                    android:id="@+id/btnaves"
+                    android:layout_width="298.98dp"
+                    android:layout_height="290.4dp"
+                    android:layout_marginTop="144dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:onClick="naves"
+                    android:tint="#00FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btminigame"
+                    app:srcCompat="@drawable/btnaves"
+                    tools:ignore="UseAppTint" />
+
+                <ImageButton
+                    android:id="@+id/btdevs"
+                    android:layout_width="298.98dp"
+                    android:layout_height="290.4dp"
+                    android:layout_marginTop="144dp"
+                    android:backgroundTint="#00FFFFFF"
+                    android:onClick="devs"
+                    android:tint="#00FFFFFF"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/btnaves"
+                    app:srcCompat="@drawable/btdevs"
+                    tools:ignore="UseAppTint" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/historia"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/rodape" />
+
+                <ImageButton
+                    android:id="@+id/button_site"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="52dp"
+                    android:backgroundTint="#00FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="@+id/historia"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:srcCompat="@drawable/logo" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

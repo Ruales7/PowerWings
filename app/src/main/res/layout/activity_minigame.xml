@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jdbackground"
+    tools:context=".minigame">
+
+    <ImageButton
+        android:id="@+id/button_voltar"
+        android:layout_width="145dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="312dp"
+        android:background="#00FFFFFF"
+        android:backgroundTint="#00000000"
+        android:src="@drawable/voltar"
+        android:onClick="MainActivity"
+        android:shadowColor="#00FFFFFF"
+        android:text="voltar"
+        android:textColor="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:visibility="visible" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/titulo"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/aeronave"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="60dp"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/playBtn"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:src="@drawable/play"
+            android:layout_marginTop="10dp"
+            />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>
